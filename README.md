@@ -6,7 +6,7 @@
 A fortnite HTTP/XMPP bot coded in Python with party capabilites.
 
 ## Discord Support
-<a href="https://discord.gg/5ZwSrvY"><img src="
+<a href="https://discord.gg/5ZwSrvY"
     
 
 ## Installation
