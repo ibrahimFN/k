@@ -1,4 +1,4 @@
-Fortnite Lobby Bot Made By TakashiBTW
+Fortnite Lobby Bot Made By OS20 dusty28
 # fortnitepy-bot
 A fortnite XMPP bot coded in Python with party capabilites.
 
