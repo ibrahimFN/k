@@ -406,8 +406,6 @@ async def event_friend_message(message):
                 await message.reply('Emote set to ' + f'{cosmetic.name}')
             except BenBotAsync.exceptions.NotFound:
                 await message.reply(f'Could not find an emote named: {joinedArguments}')
-              
-           
     
     if "!pickaxe" in args[0].lower():
         if message.author.display_name in data['BlockList']:
@@ -467,6 +465,34 @@ async def event_friend_message(message):
                             await message.reply('Pointing with: ' + f'{cosmetic.name}')
                         except BenBotAsync.exceptions.NotFound:
                             await message.reply(f'Could not find a pickaxe named: {joinedArguments}')
+                            
+    if "!gift" in args[0].lower():
+        if message.author.display_name in data['BlockList']:
+            await message.reply("You don't have access to this command!")
+        else:
+            await client.user.party.me.clear_emote()
+            if len(args) == 1:
+                await client.user.party.me.set_emote(asset="/Game/Athena/Items/Cosmetics/Dances/EID_nevergonna.EID_nevergonna")
+                await message.reply('what did you think would happen')
+                
+    if "!dab" in args[0].lower():
+        if message.author.display_name in data['BlockList']:
+            await message.reply("You don't have access to this command!")
+        else:
+            await client.user.party.me.clear_emote()
+            if len(args) == 1:
+                await client.user.party.me.set_emote(asset="/Game/Athena/Items/Cosmetics/Dances/EID_dab.EID_dab")
+                await message.reply('look at my dab')
+                
+    if "!floss" in args[0].lower():
+        if message.author.display_name in data['BlockList']:
+            await message.reply("You don't have access to this command!")
+        else:
+            await client.user.party.me.clear_emote()
+            if len(args) == 1:
+                await client.user.party.me.set_emote(asset="/Game/Athena/Items/Cosmetics/Dances/EID_floss.EID_floss")
+                await message.reply('i be flossin i be flossin i be flossin i be flossin i be flossin ')
+                
 
     if "!pet" in args[0].lower():
         if message.author.display_name in data['BlockList']:

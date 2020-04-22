@@ -1,4 +1,4 @@
-Fortnite Lobby Bot Made By OS20 dusty28
+Fortnite Lobby Bot Made By TakashiBTW
 # fortnitepy-bot
 A fortnite XMPP bot coded in Python with party capabilites.
 
@@ -179,6 +179,8 @@ Usage: !admin add <EPIC GAMES name>
 !admin remove - Removes a player from the 'FullAccess' list. [Needs 'FullAccess']
 Usage: !admin remove <EPIC GAMES name>
 
+## MY Social Media
 
+YouTube: https://www.youtube.com/TakashiBTW
 
-
+Twitch: https://Twitch.tv/TakashiBTW
