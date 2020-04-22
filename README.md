@@ -179,8 +179,6 @@ Usage: !admin add <EPIC GAMES name>
 !admin remove - Removes a player from the 'FullAccess' list. [Needs 'FullAccess']
 Usage: !admin remove <EPIC GAMES name>
 
-## MY Social Media
 
-YouTube: https://www.youtube.com/TakashiBTW
 
-Twitch: https://Twitch.tv/TakashiBTW
+
