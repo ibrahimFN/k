@@ -729,7 +729,37 @@ async def event_friend_message(message):
             await message.reply('Skin set to shadow henchman!')
             print(f" [PYBOT] [{getTime()}] Client's Skin set to shadow henchman")
             
+    if "!arctic" in args[0].lower():
+        if message.author.display_name in data['BlockList']:
+            await message.reply("You don't have access to this command!")
+        else:
+            variants = client.user.party.me.create_variants(
+                   material=2
+                )
 
+            await client.user.party.me.set_outfit(
+                asset='CID_NPC_Athena_Commando_M_paddedarmorarctic',
+                variants=variants
+                )
+
+            await message.reply('Skin set to cold henchman')
+            print(f" [PYBOT] [{getTime()}] Client's Skin set to cold henchman")
+      
+    if "!oil" in args[0].lower():
+           if message.author.display_name in data['BlockList']:
+               await message.reply("You don't have access to this command!")
+           else:
+               variants = client.user.party.me.create_variants(
+                      material=2
+                   )
+
+               await client.user.party.me.set_outfit(
+                   asset='CID_NPC_Athena_Commando_M_tacticalfishermanoil',
+                   variants=variants
+                   )
+
+               await message.reply('Skin set to dirty henchman')
+               print(f" [PYBOT] [{getTime()}] Client's Skin set to dirty henchman")
 
     if "EID_" in args[0]:
         if message.author.display_name in data['BlockList']:
@@ -762,7 +792,7 @@ async def event_friend_message(message):
         if message.author.display_name in data['BlockList']:
             await message.reply("You don't have access to this command!")
         else:
-            await message.reply('List of all commands coming soon.')
+            await message.reply('List of all commands !shadow ,!goldenpeely ,   !ghost  !goldenbuffcat ,    !goldenmidas ,    !goldenbrutus ,    !oil ,    !arctic and if need more help then https://discord.gg/5ZwSrvY                   .')
 
     if "Pickaxe_" in args[0]:
         if message.author.display_name in data['BlockList']:
