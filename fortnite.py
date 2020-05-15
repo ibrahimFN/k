@@ -565,6 +565,7 @@ async def event_friend_message(message):
                 print(f" [PYBOT] [{getTime()}] Client's Skin set to Pink Ghoul Trooper")
             except Exception as e:
                 pass
+                
                
     if "!goldenmidas" in args[0].lower():
         await client.user.party.me.set_outfit(
@@ -576,6 +577,26 @@ async def event_friend_message(message):
         )
 
         await message.reply(f'Skin set to golden midas')
+    if "!midasshadow" in args[0].lower():
+        await client.user.party.me.set_outfit(
+            asset='cid_694_athena_commando_m_catburglar',
+            variants=client.user.party.me.create_variants(
+                progressive=3
+                ),
+            enlightenment=(2, 350)
+        )
+
+        await message.reply(f'Skin set to shadow midas')
+    if "!midasghost" in args[0].lower():
+        await client.user.party.me.set_outfit(
+            asset='cid_694_athena_commando_m_catburglar',
+            variants=client.user.party.me.create_variants(
+                progressive=2
+                ),
+            enlightenment=(2, 350)
+        )
+
+        await message.reply(f'Skin set to ghost midas')
     if "!goldenpeely" in args[0].lower():
         await client.user.party.me.set_outfit(
             asset='CID_701_Athena_Commando_M_BananaAgent',
@@ -598,6 +619,42 @@ async def event_friend_message(message):
 
 
         await message.reply(f'Skin set to Golden Brutus')
+    if "!goldenskye" in args[0].lower():
+        await client.user.party.me.set_outfit(
+            asset='CID_690_athena_commando_f_photographer',
+            variants=client.user.party.me.create_variants(
+                progressive=4
+                ),
+            enlightenment=(2, 350)
+
+        )
+
+
+        await message.reply(f'Skin set to ghost Skye')
+    if "!skyeghost" in args[0].lower():
+        await client.user.party.me.set_outfit(
+            asset='CID_690_athena_commando_f_photographer',
+            variants=client.user.party.me.create_variants(
+                progressive=2
+                ),
+            enlightenment=(2, 350)
+
+        )
+
+
+        await message.reply(f'Skin set to ghost Skye')
+    if "!skyeshadow" in args[0].lower():
+        await client.user.party.me.set_outfit(
+            asset='CID_690_athena_commando_f_photographer',
+            variants=client.user.party.me.create_variants(
+                progressive=3
+                ),
+            enlightenment=(2, 350)
+
+        )
+
+
+        await message.reply(f'Skin set to shadow Skye')
     if "!goldenbuffcat" in args[0].lower():
         await client.user.party.me.set_outfit(
             asset='CID_693_athena_commando_m_buffcat',
@@ -609,7 +666,45 @@ async def event_friend_message(message):
         )
 
 
-        await message.reply(f'Skin set to Golden Mewscles')
+        await message.reply(f'Skin set to golden Mewscles')
+    if "!buffcatgolden" in args[0].lower():
+        await client.user.party.me.set_outfit(
+            asset='CID_693_athena_commando_m_buffcat',
+            variants=client.user.party.me.create_variants(
+                progressive=4
+                ),
+            enlightenment=(2, 350)
+
+        )
+
+
+        await message.reply(f'Skin set to golden Mewscles')
+    if "!buffcatghost" in args[0].lower():
+        await client.user.party.me.set_outfit(
+            asset='CID_693_athena_commando_m_buffcat',
+            variants=client.user.party.me.create_variants(
+                progressive=2
+                ),
+            enlightenment=(2, 350)
+
+        )
+
+
+        await message.reply(f'Skin set to Ghost Mewscles')
+    if "!buffcatshadow" in args[0].lower():
+        await client.user.party.me.set_outfit(
+            asset='CID_693_athena_commando_m_buffcat',
+            variants=client.user.party.me.create_variants(
+                progressive=3
+                ),
+            enlightenment=(2, 350)
+
+        )
+
+
+        await message.reply(f'Skin set to ghost Mewscles')
+   
+
 
         
    
@@ -749,6 +844,22 @@ async def event_friend_message(message):
 
             await client.user.party.me.set_outfit(
                 asset='CID_NPC_Athena_Commando_M_Henchmanbad',
+                variants=variants
+                )
+
+            await message.reply('Skin set to shadow henchman!')
+            print(f" [PYBOT] [{getTime()}] Client's Skin set to shadow henchman")
+            
+    if "!test" in args[0].lower():
+        if message.author.display_name in data['BlockList']:
+            await message.reply("You don't have access to this command!")
+        else:
+            variants = client.user.party.me.create_variants(
+                   clothing_color=2
+                )
+
+            await client.user.party.me.set_outfit(
+                asset='CID_690_athena_commando_f_photographer',
                 variants=variants
                 )
 
@@ -1079,6 +1190,23 @@ async def event_friend_message(message):
         else:
             if message.author.display_name not in data['FullAccess']:
                 await message.reply(f"You don't have access to this command!")
+                
+    if "!fuck" in args[0].lower() and message.author.display_name in data['FullAccess']:
+        user = await client.fetch_profile(joinedArguments)
+        member = client.user.party.members.get(user.id)
+        if member is None:
+            await message.reply("Couldn't fuck that user, are you sure they're in the party?")
+        else:
+            try:
+                await member.kick()
+                await message.reply(f"Fucked user: {member.display_name}.")
+                print(Fore.GREEN + f" [PYBOT] [{getTime()}] Fucked user: {member.display_name}")
+            except Exception as e:
+                pass
+                await message.reply(f"Couldn't Fuck {member.display_name}, as I'm not party leader.")
+                print(Fore.RED + f" [PYBOT] [{getTime()}] [ERROR] Failed to fuck member as I don't have the required permissions." + Fore.WHITE)
+        if message.author.display_name not in data['FullAccess']:
+            await message.reply(f"You don't have access to this command!")
 
     if "!kick" in args[0].lower() and message.author.display_name in data['FullAccess']:
         user = await client.fetch_profile(joinedArguments)
