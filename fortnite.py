@@ -892,6 +892,38 @@ async def event_friend_message(message):
             await message.reply('Skin set to shadow henchman!')
             print(f" [PYBOT] [{getTime()}] Client's Skin set to shadow henchman")
             
+    if "!oil" in args[0].lower():
+        if message.author.display_name in data['BlockList']:
+            await message.reply("You don't have access to this command!")
+        else:
+            variants = client.party.me.create_variants(
+                   material=2
+                )
+
+            await client.party.me.set_outfit(
+                asset='CID_NPC_Athena_Commando_M_tacticalfishermanoil',
+                variants=variants
+                )
+
+            await message.reply('Skin set to dirty henchman!')
+            print(f" [PYBOT] [{getTime()}] Client's Skin set to dirty henchman")
+            
+    if "!arctic" in args[0].lower():
+        if message.author.display_name in data['BlockList']:
+            await message.reply("You don't have access to this command!")
+        else:
+            variants = client.party.me.create_variants(
+                   material=2
+                )
+
+            await client.party.me.set_outfit(
+                asset='CID_NPC_Athena_Commando_M_paddedarmorarctic',
+                variants=variants
+                )
+
+            await message.reply('Skin set to cold henchman!')
+            print(f" [PYBOT] [{getTime()}] Client's Skin set to cold henchman")
+            
     if "!bot" in args[0].lower():
         if message.author.display_name in data['BlockList']:
             await message.reply("You don't have access to this command!")
@@ -998,6 +1030,22 @@ async def event_friend_message(message):
 
             await client.party.me.set_outfit(
                 asset='CID_007_Athena_Commando_M_DEFAULT',
+                variants=variants
+                )
+
+            await message.reply('Skin set to BOT :)')
+            print(f" [PYBOT] [{getTime()}] Client's Skin set to bot")
+            
+    if "!bot7" in args[0].lower():
+        if message.author.display_name in data['BlockList']:
+            await message.reply("You don't have access to this command!")
+        else:
+            variants = client.party.me.create_variants(
+                   material=2
+                )
+
+            await client.party.me.set_outfit(
+                asset='CID_008_Athena_Commando_M_DEFAULT',
                 variants=variants
                 )
 
