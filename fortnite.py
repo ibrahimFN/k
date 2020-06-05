@@ -923,6 +923,22 @@ async def event_friend_message(message):
 
             await message.reply('Skin set to BOT :)')
             print(f" [PYBOT] [{getTime()}] Client's Skin set to bot")
+            
+    if "!bot2" in args[0].lower():
+        if message.author.display_name in data['BlockList']:
+            await message.reply("You don't have access to this command!")
+        else:
+            variants = client.party.me.create_variants(
+                   material=2
+                )
+
+            await client.party.me.set_outfit(
+                asset='CID_002_Athena_Commando_F_DEFAULT',
+                variants=variants
+                )
+
+            await message.reply('Skin set to BOT :)')
+            print(f" [PYBOT] [{getTime()}] Client's Skin set to bot")
 
     if "EID_" in args[0]:
         if message.author.display_name in data['BlockList']:
