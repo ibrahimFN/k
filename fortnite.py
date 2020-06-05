@@ -859,6 +859,38 @@ async def event_friend_message(message):
 
             await message.reply('Skin set to hologram!')
             print(f" [PYBOT] [{getTime()}] Client's Skin set to hologram")
+            
+    if "!ghost" in args[0].lower():
+        if message.author.display_name in data['BlockList']:
+            await message.reply("You don't have access to this command!")
+        else:
+            variants = client.party.me.create_variants(
+                   material=2
+                )
+
+            await client.party.me.set_outfit(
+                asset='CID_NPC_Athena_Commando_M_HenchmanGood',
+                variants=variants
+                )
+
+            await message.reply('Skin set to ghost henchman!')
+            print(f" [PYBOT] [{getTime()}] Client's Skin set to ghost henchman")
+            
+    if "!shadow" in args[0].lower():
+        if message.author.display_name in data['BlockList']:
+            await message.reply("You don't have access to this command!")
+        else:
+            variants = client.party.me.create_variants(
+                   material=2
+                )
+
+            await client.party.me.set_outfit(
+                asset='CID_NPC_Athena_Commando_M_Henchmanbad',
+                variants=variants
+                )
+
+            await message.reply('Skin set to shadow henchman!')
+            print(f" [PYBOT] [{getTime()}] Client's Skin set to shadow henchman")
 
     if "EID_" in args[0]:
         if message.author.display_name in data['BlockList']:
