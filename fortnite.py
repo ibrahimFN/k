@@ -567,6 +567,17 @@ async def event_friend_message(message):
 
         await message.reply(f'Skin set to Golden Peely')
         
+    if "!peelyshadow" in args[0].lower():
+        await client.party.me.set_outfit(
+            asset='CID_701_Athena_Commando_M_BananaAgent',
+            variants=client.party.me.create_variants(
+                progressive=3
+                ),
+            enlightenment=(2, 350)
+        )
+
+        await message.reply(f'Skin set to shadow Peely')
+        
     if "!goldenmidas" in args[0].lower():
         await client.party.me.set_outfit(
             asset='CID_694_Athena_Commando_M_Catburglar',
