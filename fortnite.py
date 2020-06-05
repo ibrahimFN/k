@@ -599,6 +599,28 @@ async def event_friend_message(message):
         )
 
         await message.reply(f'Skin set to Golden Peely')
+        
+    if "!midasshadow" in args[0].lower():
+        await client.party.me.set_outfit(
+            asset='CID_694_Athena_Commando_M_Catburglar',
+            variants=client.party.me.create_variants(
+                progressive=3
+                ),
+            enlightenment=(2, 350)
+        )
+
+        await message.reply(f'Skin set to shadow midas')
+        
+    if "!midasghost" in args[0].lower():
+        await client.party.me.set_outfit(
+            asset='CID_694_Athena_Commando_M_Catburglar',
+            variants=client.party.me.create_variants(
+                progressive=2
+                ),
+            enlightenment=(2, 350)
+        )
+
+        await message.reply(f'Skin set to ghost Peely')
 
     if "!brainiacghoul" in args[0].lower():
         if message.author.display_name in data['BlockList']:
