@@ -1,4 +1,5 @@
-Fortnite Lobby Bot Made By TakashiBTW
+-- BIG credits to xMistt for the source code and inspiration of this bot.
+
 # fortnitepy-bot
 A fortnite XMPP bot coded in Python with party capabilites.
 
@@ -15,10 +16,12 @@ python3 -m pip install -U colorama
 python3 -m pip install -U BenBotAsync==1.0.1
 ```
 
-Then fill out ``config.json`` with your configuration & run Start Bot.bat
+Then fill out ``config.json`` with your configuration & run the fortnite.py file!
 
+## Commands
+For a list of commands, <a href="https://github.com/KaosDrip/fortnitepy-bot/wiki/Commands">click here.</a>
 
-## Config Documentation do not write your email and password in here
+## Config Documentation
 ```
 "email": "",                                                - The bot accounts email.
 "password": "",                                             - The bot accounts password.
@@ -50,137 +53,5 @@ Then fill out ``config.json`` with your configuration & run Start Bot.bat
 ]                                                           /
 ```   
 
-##Commands
-
-!skin - Sets the outfit of the client using the outfits name.
-Usage: !skin <skin name>
-
-!backpack - Sets the backpack of the client using the backpacks name.
-Usage: !backpack <backpack name> Or just '!backpack' to set to none.
-
-!emote - Sets the emote of the client using the emotes
-Usage: !emote <emote name>
-
-!pickaxe - Sets the pickaxe of the client using the pickaxe name.
-Usage: !pickaxe <pickaxe name>
-
-!point - Points out a specified pickaxe.
-Usage: !point <pickaxe name>
-
-!pet - Sets the pet (backpack) of the client using the pets name.
-Usage: !pet <pet name>
-
-!emoji - Sets the emoji of the client using the emojis name.
-Usage: !emoji <emoji name>
-
-!reset - Resets the bot to it's default cosmetic loadout.
-Usage: !reset
-
-!variants - Changes the skin's variants to what you set. For a more detailed variants commands page, click here.
-Usage: !variants <CID> <style type> <integer>
-
-!purpleskull - Sets the outfit of the client to Purple Skull Trooper.
-Usage: !purpleskull
-
-!pinkghoul - Sets the outfit of the client to Pink Ghoul Trooper.
-Usage: !pinkghoul
-
-!normalghoul - Sets the outfit of the client to Normal Ghoul Trooper.
-Usage: !normalghoul
-
-!brainiacghoul - Sets the outfit of the client to Brainiac Ghoul Trooper.
-Usage: !brainiacghoul
-
-!purpleportal - Sets the backpack of the client to Purple Ghost Portal.
-Usage: !purpleportal
-
-!checkeredrenegade - Sets the outfit of the client to Checkered Renegade.
-Usage: !checkeredrenegade
-
-!banner - Sets the banner of the client.
-Usage: !banner <icon> <colour> <level>
-
-CID_ - Sets the outfit of the client using CID.
-Usage: <CID>
-
-BID_ Sets the backpack of the client using BID.
-Usage: <BID>
-
-PICKAXE_ID_ - Sets the pickaxe of the client using PICKAXE_ID.
-Usage: <PICKAXE_ID>
-
-EID_ - Sets the emote of the client using EID.
-Usage: <EID>
-
-PetCarrier_ - Sets the pet of the client using PetCarrier_.
-Usage: <PetCarrier_>
-
-Emoji_ - Sets the emoji of the client using Emoji_.
-Usage: <Emoji_>
-
-!stop - Clears/stops the emote currently playing.
-Usage: !stop
-
-!help - Displays a link to this webpage.
-Usage: !help
-
-Party Commands
-!ready - Sets the readiness of the client to ready.
-Usage: !ready
-
-!unready/!sitin - Sets the readiness of the client to unready.
-Usage: !unready
-
-!sitout - Sets the readiness of the client to SittingOut.
-Usage: !unready
-
-!bp - Sets the battlepass info of the client.
-Usage: !bp <tier>
-
-!level - Sets the level of the client.
-Usage: !level <level>
-
-!invite - Invites the person who sent the message unless name is inputted. (User must be on friends list)
-Usage: '!invite' OR '!invite <user>'
-
-Playlist_ - Sets the lobbies selected playlist.
-Usage: <Playlist ID>
-
-!echo - Sends message to party chat with the given content. [Needs 'FullAccess']
-Usage: !echo <message>
-
-!status - Sends and sets the status of the client. [Needs 'FullAccess']
-Usage: !status <text>
-
-!leave - Leaves the current party. [Needs 'FullAccess']
-Usage: !leave
-
-!join - Joins the person's lobby unless a name is inputted. [Needs 'FullAccess']
-Usage: !join OR !join <username>
-
-!kick - Kicks the inputted user. [Needs 'FullAccess']
-Usage: !kick <username>
-
-!promote - Promotes the inputted user. [Needs 'FullAccess']
-Usage: !promote <username>
-
-!showfriends - Inputs a list of friends that the bot has added to the command prompt. [Needs 'FullAccess']
-Usage: !showfriends
-
-!add - Sends a friend request the inputted user. [Needs 'FullAccess']
-Usage: !add <username>
-
-!remove - Removes the inputted user as a friend. [Needs 'FullAccess']
-Usage: !remove <username>
-
-!admin add - Adds a player to the 'FullAccess' list. [Needs 'FullAccess']
-Usage: !admin add <EPIC GAMES name>
-
-!admin remove - Removes a player from the 'FullAccess' list. [Needs 'FullAccess']
-Usage: !admin remove <EPIC GAMES name>
-
-## MY Social Media
-
-YouTube: https://www.youtube.com/TakashiBTW
-
-Twitch: https://Twitch.tv/TakashiBTW
+## Creative Commons License
+By downloading this, you agree to the Creative Commons license and that you're not allowed to sell this repository or any code from this repository. For more info see https://commonsclause.com/.
