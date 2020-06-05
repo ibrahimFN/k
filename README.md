@@ -5,7 +5,7 @@ A fortnite XMPP bot coded in Python with party capabilites.
 
 ## How do I get started?
 
-* Install [Python 3.8](https://www.python.org/ftp/python/3.8.3/python-3.8.3.exe"Python 3.8 Download") (suggested, any 3.x version *should* work, **APART FROM 3.6 DO NOT USE 3.6 OR ELSE YOU'LL GET A LOT OF ERRORS**.)
+* Install [Python 3.8](https://www.python.org/ftp/python/3.8.3/python-3.8.3.exe "Python 3.8 Download") (suggested, any 3.x version *should* work, **APART FROM 3.6 DO NOT USE 3.6 OR ELSE YOU'LL GET A LOT OF ERRORS**.)
 
 
 * Then run ``INSTALL PACKAGES.bat`` if you're on Windows or type these commands into console if you're on macOS / linux:
@@ -19,7 +19,7 @@ python3 -m pip install -U BenBotAsync==1.0.1
 Then fill out ``config.json`` with your configuration & run the fortnite.py file!
 
 ## Commands
-For a list of commands, <a href="https://sites.google.com/view/bot-lobby-commands/commands">click here.</a>
+For a list of commands, <a href=" https://sites.google.com/view/bot-lobby-commands/commands ">click here.</a>
 
 ## Config Documentation
 ```
