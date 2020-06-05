@@ -654,6 +654,39 @@ async def event_friend_message(message):
         )
 
         await message.reply(f'Skin set to ghost brutus')
+        
+    if "!goldenskye" in args[0].lower():
+        await client.party.me.set_outfit(
+            asset='CID_690_athena_commando_f_photographer',
+            variants=client.party.me.create_variants(
+                progressive=4
+                ),
+            enlightenment=(2, 350)
+        )
+
+        await message.reply(f'Skin set to golden skye')
+        
+    if "!skyeshadow" in args[0].lower():
+        await client.party.me.set_outfit(
+            asset='CID_690_athena_commando_f_photographer',
+            variants=client.party.me.create_variants(
+                progressive=3
+                ),
+            enlightenment=(2, 350)
+        )
+
+        await message.reply(f'Skin set to shadow skye')
+        
+    if "!skyeghost" in args[0].lower():
+        await client.party.me.set_outfit(
+            asset='CID_690_athena_commando_f_photographer',
+            variants=client.party.me.create_variants(
+                progressive=2
+                ),
+            enlightenment=(2, 350)
+        )
+
+        await message.reply(f'Skin set to ghost skye')
 
     if "!brainiacghoul" in args[0].lower():
         if message.author.display_name in data['BlockList']:
