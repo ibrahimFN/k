@@ -19,7 +19,7 @@ python3 -m pip install -U BenBotAsync==1.0.1
 Then fill out ``config.json`` with your configuration & run the fortnite.py file!
 
 ## Commands
-For a list of commands, <a href=" https://sites.google.com/view/bot-lobby-commands/commands ">click here.</a>
+For a list of commands, <a href="https://sites.google.com/view/bot-lobby-commands/commands ">click here.</a>
 
 ## Config Documentation
 ```
