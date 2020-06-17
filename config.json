@@ -14,7 +14,11 @@
     "joinoninvite": "True",
     "AdminPassword": "0001",
     "FullAccess": [
+    "",
+    ""
     ],
     "BlockList": [
+    "Ninja",
+    ""
     ]
 }
