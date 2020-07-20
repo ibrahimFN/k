@@ -556,7 +556,7 @@ async def event_friend_message(message):
             except Exception as e:
                 pass
                
-    if "!shortGhostHenchman" in args[0].lower():
+    if "!shortGhosthenchman" in args[0].lower():
         if message.author.display_name in data['BlockList']:
             await message.reply("You don't have access to this command!")
         else:
@@ -575,7 +575,7 @@ async def event_friend_message(message):
             except Exception as e:
                 pass
                 
-    if "!shortshadowHenchman" in args[0].lower():
+    if "!shortshadowhenchman" in args[0].lower():
         if message.author.display_name in data['BlockList']:
             await message.reply("You don't have access to this command!")
         else:
@@ -737,27 +737,27 @@ async def event_friend_message(message):
 
         await message.reply(f'Skin set to golden Mewscles')
         
-    if "!SmallcatGhost" in args[0].lower():
+    if "!smallcatghost" in args[0].lower():
         await client.party.me.set_outfit(
-            asset='CID_693_athena_commando_m_buffcat',
+            asset='cid_776_athena_commando_m_professorpup',
             variants=client.party.me.create_variants(
                 progressive=2
                 ),
             enlightenment=(2, 350)
         )
 
-        await message.reply(f'cid_776_athena_commando_m_professorpup')
+        await message.reply(f'skin is the baby')
         
-    if "!SmallcatShadow" in args[0].lower():
+    if "!smallcatshadow" in args[0].lower():
         await client.party.me.set_outfit(
-            asset='CID_693_athena_commando_m_buffcat',
+            asset='cid_776_athena_commando_m_professorpup',
             variants=client.party.me.create_variants(
                 progressive=3
                 ),
             enlightenment=(2, 350)
         )
 
-        await message.reply(f'cid_776_athena_commando_m_professorpup')
+        await message.reply(f'Skin baby')
         
     if "!buffcatghost" in args[0].lower():
         await client.party.me.set_outfit(
@@ -781,7 +781,7 @@ async def event_friend_message(message):
 
         await message.reply(f'Skin set to shadow Mewscles')
         
-    if "!Aquaman" in args[0].lower():
+    if "!aquaman" in args[0].lower():
         await client.party.me.set_outfit(
             asset='cid_772_athena_commando_m_sandcastle',
             variants=client.party.me.create_variants(
@@ -792,9 +792,9 @@ async def event_friend_message(message):
 
         await message.reply(f'Skin set to Aquaman')
         
-    if "!AquamanWithNoShirt" in args[0].lower():
+    if "!aquamanwithnoshirt" in args[0].lower():
         await client.party.me.set_outfit(
-            asset='cid_772_athena_commando_m_sandcastle',
+            asset='CID_772_athena_commando_m_sandcastle',
             variants=client.party.me.create_variants(
                 progressive=2
                 ),
