@@ -1,1 +1,1 @@
-worker: bash Fortnite.py
+worker: python Fortnite.py
