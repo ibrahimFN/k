@@ -1,1 +1,1 @@
-worker: python Fortnite.py
+worker: python fortnite.py
