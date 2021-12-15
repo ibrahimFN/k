@@ -703,17 +703,7 @@ async def event_friend_message(message):
         )
 
         await message.reply(f'Skin set to golden skye')
-        @client.command()
-async def goldpeely(ctx):
-    variants = client.party.me.create_variants(progressive=4)
-
-    await client.party.me.set_outfit(
-        asset='CID_701_Athena_Commando_M_BananaAgent',
-        variants=variants,
-        enlightenment=(2, 350)
-    )
-
-    await ctx.send('Skin set to: Golden Peely')
+        
 
     if "!skyeshadow" in args[0].lower():
         await client.party.me.set_outfit(
